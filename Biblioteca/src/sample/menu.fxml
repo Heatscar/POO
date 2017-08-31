@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.76-ea" fx:controller="sample.MenuController">
+
+    <TableView fx:id="tabla_prestamos" editable="true" prefHeight="358.0" prefWidth="1102.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <columns>
+            <!-- Clase Libro -->
+            <TableColumn fx:id="id" prefWidth="100" text="Id">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="titulo" prefWidth="100" text="Titulo">
+                <cellValueFactory>
+                    <PropertyValueFactory property="titulo" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="autor" prefWidth="100" text="Autor">
+                <cellValueFactory>
+                    <PropertyValueFactory property="autor" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="editorial" prefWidth="100" text="Editorial">
+                <cellValueFactory>
+                    <PropertyValueFactory property="editorial" />
+                </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn fx:id="edicion" prefWidth="100" text="Edicion">
+                <cellValueFactory>
+                    <PropertyValueFactory property="edicion" />
+                </cellValueFactory>
+            </TableColumn>
+            <!-- fin -->
+
+            <!-- clase Prestamo -->
+            <TableColumn fx:id="nombre" prefWidth="100" text="Nombre">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nombre" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="direccion" prefWidth="100" text="Direccion">
+                <cellValueFactory>
+                    <PropertyValueFactory property="direccion" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="telefono" prefWidth="100" text="Telefono">
+                <cellValueFactory>
+                    <PropertyValueFactory property="telefono" />
+                </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn fx:id="fecha_inicial" prefWidth="100" text="Fecha Inicial">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fecha_inicial" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="fecha_final" prefWidth="100" text="Fecha Final">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fecha_final" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="fecha_entrega" prefWidth="100" text="Fecha Entrega">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fecha_entrega" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+        <!-- fin -->
+
+        <sortOrder>
+            <fx:reference source="id" />
+        </sortOrder> 
+    </TableView>         
+    
+    <Button fx:id="_crear" onAction="#crear" prefHeight="48.0" prefWidth="110.0" text="Crear" GridPane.columnIndex="0" GridPane.rowIndex="3">
+      <font>
+         <Font size="22.0" />
+      </font></Button>
+    <Button fx:id="_editar" onAction="#editar" prefHeight="48.0" prefWidth="111.0" text="Editar" GridPane.columnIndex="0" GridPane.rowIndex="4">
+      <font>
+         <Font size="22.0" />
+      </font></Button>
+    <Button fx:id="_eliminar" onAction="#eliminar" prefHeight="48.0" prefWidth="111.0" text="Eliminar" GridPane.columnIndex="0" GridPane.rowIndex="5">
+      <font>
+         <Font size="22.0" />
+      </font></Button>
+    <Button fx:id="_entregar" onAction="#entregar" prefHeight="48.0" prefWidth="113.0" text="Entregar" GridPane.columnIndex="0" GridPane.rowIndex="6">
+      <font>
+         <Font size="22.0" />
+      </font></Button>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
