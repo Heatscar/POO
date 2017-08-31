@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="169.0" layoutY="14.0" text="Palindromo">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cadf" alignment="CENTER" layoutX="14.0" layoutY="67.0" prefHeight="63.0" prefWidth="477.0" promptText="Ingrese el palindromo">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font></TextField>
+      <ListView fx:id="textO" layoutX="12.0" layoutY="212.0" orientation="HORIZONTAL" prefHeight="49.0" prefWidth="477.0" />
+      <ListView fx:id="textI" layoutX="12.0" layoutY="268.0" orientation="HORIZONTAL" prefHeight="49.0" prefWidth="477.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></ListView>
+      <Button fx:id="Aceptar" layoutX="188.0" layoutY="137.0" mnemonicParsing="false" onAction="#click" prefHeight="63.0" prefWidth="124.0" text="Aceptar">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="Borrar" layoutX="193.0" layoutY="334.0" mnemonicParsing="false" onAction="#Limpiar" prefHeight="46.0" prefWidth="115.0" text="Limpiar">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
