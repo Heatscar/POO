@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="432.0" prefWidth="463.0">
+         <children>
+            <Label layoutX="136.0" layoutY="23.0" text="Tabla de Multiplicar" textFill="#ee0909">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="89.0" text="Cual tabla desea ver?" />
+            <Label layoutX="14.0" layoutY="134.0" prefHeight="17.0" prefWidth="167.0" text="hasta que numero multiplica?" />
+            <TextField fx:id="tfTabla" layoutX="188.0" layoutY="85.0" prefHeight="25.0" prefWidth="137.0" promptText="Numero Tabla" />
+            <TextField fx:id="tfLimite" layoutX="195.0" layoutY="130.0" prefHeight="25.0" prefWidth="124.0" promptText="Numero Limite" />
+            <Button fx:id="bttResultado" layoutX="94.0" layoutY="230.0" mnemonicParsing="false" onAction="#accionResultado" text="Resultado" />
+            <TextArea fx:id="taResultado" layoutX="188.0" layoutY="177.0" prefHeight="230.0" prefWidth="200.0" />
+            <Button fx:id="bttLimpiar" layoutX="101.0" layoutY="311.0" mnemonicParsing="false" onAction="#accionLimpiar" text="Limpiar" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
